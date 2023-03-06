@@ -31,8 +31,7 @@ class Position:
         return f"{typename(self)}(latitude={self.latitude}, longitude={self.longitude})"
 
     def __str__(self) -> str:
-        return f"{abs(self.latitude)}° {self.latitude_hemisphere}, " \
-               f"{abs(self.longitude)}° {self.longitude_hemisphere}"
+        return format(self)
 
     def __format__(self, format_spec) -> str:
         component_format_spec = ".2f"

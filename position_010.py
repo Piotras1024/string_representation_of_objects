@@ -10,8 +10,6 @@ class Position:
 
         self._latitude = latitude
         self._longitude = longitude
-        self.id = id(self)
-        Position.instances[self.id] = self                   #f"Instance {len(Position.instances) + 1}"
 
     @property
     def latitude(self):
